@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossom Bubble | Homepage</title>
+    <link rel="shortcut icon" href="assets/bubbly_blossom_favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Outfit:wght@100;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index_page.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MXC3MSHQ04"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MXC3MSHQ04');
+    </script>
+</head>
+
+<body class="body_fontSize">
+    <header class="header_section">
+        <div class="header_logo">
+            <a href="index.html">
+                <img src="assets/header/website-brand_logo.svg" alt="Blossom logo" class="blossom-brand">
+                <h1 class="header_brand">Blossom.</h1>
+            </a>
+        </div>
+        <div class="header_btn">
+            <a href="#">
+                <div class="header_faq-btn">FAQs</div>
+            </a>
+            <button class="header_customize">
+                <div class="header_customize-btn">
+                    <img src="assets/header/Edit_Pencil_01.svg" alt="Customize logo" class="customize_btn-logo">
+                    <p class="customize_btn">Customize</p>
+                    <div class="header_customize-dropdown-menu">
+                        <div class="change_theme">
+                            <p class="customize_title">Dark Mode</p>
+                            <div class="customize_dark-light_theme">
+                                <input type="checkbox" name="Checkbox" id="checkbox">
+                                <label for="checkbox" class="label">
+                                    <div class="check_ball"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="customize_changefont">
+                            <p class="customize_title">Change Font</p>
+                            <div class="customize_font-btns">
+                                <div class="fontChange-btn f-small">Aa</div>
+                                <div class="fontChange-btn f-medium">Aa</div>
+                                <div class="fontChange-btn f-large">Aa</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero_section">
+        <div class="hero_leftContent">
+            <div class="hero_tagline">
+                <h1>Blooming relationships one
+                    <span class="tagline_highlight">Neurodiverse Family</span>
+                    at a time.
+                </h1>
+            </div>
+            <div class="hero_inputfield">
+                <p class="text_weight">JOIN OUR WAITLIST</p>
+                <p class="join_text">We are rolling out the app city by city. Sign-up below and we’ll notify
+                    you when we
+                    launch the app in your hometown.</p>
+                <div class="btns">
+                    <button id="joinUs_btn">SIgn up for early access</button>
+                </div>
+            </div>
+            <div class="hero_socialIcons show-mob">
+                <p class="social_iconTag">Follow Us:</p>
+                <div class="social_icons">
+                    <a href="#">
+                        <img src="assets/hero_section/social_metaLink.svg" alt="Meta social tag" class="socialTag">
+                    </a>
+                    <a href="#">
+                        <img src="assets/hero_section/social_twitterLink.svg" alt="Twitter Social tag"
+                            class="socialTag">
+                    </a>
+                    <a href="#">
+                        <img src="assets/hero_section/social_igLink.svg" alt="Instagram Social tag" class="socialTag">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="hero_rightIllustration">
+            <img src="assets/hero_section/hero_rightIllustration.svg" alt="Bubbly blossom co Illustration">
+            <div class="hero_socialIcons hid-mob">
+                <p class="social_iconTag">Follow Us:</p>
+                <div class="social_icons">
+                    <a href="#">
+                        <img src="assets/hero_section/social_metaLink.svg" alt="Meta social tag" class="socialTag">
+                    </a>
+                    <a href="#">
+                        <img src="assets/hero_section/social_twitterLink.svg" alt="Twitter Social tag"
+                            class="socialTag">
+                    </a>
+                    <a href="#">
+                        <img src="assets/hero_section/social_igLink.svg" alt="Instagram Social tag" class="socialTag">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="early_access_section before_hidden">
+        <div class="input_form">
+            <div class="section_wrapper">
+                <div class="number_update">
+                    <div class="flowing_number">
+                        <p class="numbers">1</p>
+                        <p class="numbers">2</p>
+                        <p class="numbers">3</p>
+                        <p class="numbers">4</p>
+                        <p class="numbers">5</p>
+                    </div>
+                    <p class="whole_number">/5</p>
+                </div>
+                <div class="formOverflow">
+                    <form action="" id="form">
+                        <div class="name_container">
+                            <label for="name" class="name">What is your name ?</label>
+                            <input type="text" name="name" id="name_input" placeholder="Enter Your First and Last Name">
+                            <div class="flex_container">
+                                <div class="move_to_next" id="moveFirst">Next</div>
+                            </div>
+
+                        </div>
+                        <div class="email_container">
+                            <label for="email" class="email_label">What is your email
+                                address
+                                ?</label>
+                            <input type="email" name="email" id="email_input" placeholder="example@gmail.com">
+                            <div class="flex_container">
+                                <div class="move_to_next" id="moveSecond">Next</div>
+                                <div class="move_to_next zero" id="moveFirstback">Prev</div>
+                            </div>
+                        </div>
+                        <div class="location_container">
+                            <label for="location" class="location">Where are you located
+                                ?</label>
+                            <input type="text" name="location" id="location_input"
+                                placeholder="Enter Your City and Country">
+                            <div class="flex_container">
+                                <div class="move_to_next" id="moveThird">Next</div>
+                                <div class="move_to_next zero" id="moveSeondback">Prev</div>
+                            </div>
+                        </div>
+                        <div class="type_container">
+                            <label for="type" class="type">Sign up as</label>
+                            <select name="type" id="type_input">
+                                <option value="Autistic Person">Neurodivergent Parent</option>
+                                <option value="Autistic Parent">Neurotypical Parent</option>
+                                <option value="Non-Autistic Person">Neurodivergent Adult</option>
+                            </select>
+                            <div class="flex_container">
+                                <div class="move_to_next" id="moveForth">Next</div>
+                                <div class="move_to_next zero" id="moveThirdback">Prev</div>
+                            </div>
+                        </div>
+                        <div class="authorize_container">
+                            <label for="type" class="type">Sign in with</label>
+                            <div class="google_signIn">
+                                <img src="assets/input_section/signIn_google.svg" alt="Google sign in">
+                                <span class="authentication_name">Google Sign-in</span>
+                            </div>
+                            <div class="facebook_signIn">
+                                <img src="assets/input_section/signIn_facebook.svg" alt="Facebook sign in">
+                                <span class="authentication_name">Facebook Sign-in</span>
+                            </div>
+                            <div class="flex_container">
+                                <div class="move_to_next" id="moveFifth">Next</div>
+                                <div class="move_to_next zero" id="moveForthback">Prev</div>
+                            </div>
+                        </div>
+                        <div class="sumbit_container">
+                            <label for="submit" class="submit">Thank you for Signin up , Please submit your
+                                details.</label>
+                            <div class="flex_container wid full_wid">
+                                <input type="submit" value="Yeah, Submit My Details" id="submitForm">
+                            </div>
+                        </div>
+                        <div class="signIn-done">
+                            sign in done
+                        </div>
+                    </form>
+                </div>
+                <div class="inputSection_illustration">
+                    <img src="assets/input_section/input_illustration01.svg" alt="Input Illustrations"
+                        class="input_illustration">
+                    <img src="assets/input_section/input_illustration02.svg" alt="Input Illustrations"
+                        class="input_illustration">
+                    <img src="assets/input_section/input_illustration03.svg" alt="Input Illustrations"
+                        class="input_illustration">
+                    <img src="assets/input_section/input_illustration04.svg" alt="Input Illustrations"
+                        class="input_illustration">
+                    <img src="assets/input_section/input_illustration05.svg" alt="Input Illustrations"
+                        class="input_illustration">
+                </div>
+            </div>
+            <div class="input_text_bottom">
+                <p>*Neurodivergent individuals function in ways that diverge from the dominant societal standards of
+                    “normal”, and include neurodivergence such as autism, dyslexia, ADHD, etc.</p>
+                <p>**Neurotypical individuals have neurocognitive functioning that fall within the dominant societal
+                    standards of “normal.” Interested to learn more, <a href="#" target="_blank">read here.</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mobile_previews">
+        <div class="section_heading bg-white">
+            <p class="section_title">What does Blossom do?</p>
+            <p class="section_title-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+            </p>
+        </div>
+        <div class="transition_area">
+            <!-- <img src="assets/preview_section/transition_00_background.svg" alt="Transition background image"
+                class="transition_background"> -->
+            <div class="mobile_sticky-middle">
+                <div class="pos_sticky">
+                    <div class="frame_withImage">
+                        <img src="assets/preview_section/mobile_frame.svg" alt="" class="phone-frame">
+                        <div class="abs_container">
+                            <div class="preview_images">
+                                <img src="assets/preview_section/mobile_preview01.svg" alt="" style="opacity: 1;"
+                                    class="mobile_preview active">
+                                <img src="assets/preview_section/mobile_preview02.svg" alt="" class="mobile_preview">
+                                <img src="assets/preview_section/mobile_preview03.svg" alt="" class="mobile_preview">
+                                <img src="assets/preview_section/mobile_preview04.svg" alt="" class="mobile_preview">
+                                <img src="assets/preview_section/mobile_preview05.svg" alt="" class="mobile_preview">
+                                <img src="assets/preview_section/mobile_preview06.svg" alt="" class="mobile_preview">
+                                <img src="assets/preview_section/mobile_preview07.svg" alt="" class="mobile_preview">
+                                <img src="assets/preview_section/mobile_preview08.svg" alt="" class="mobile_preview">
+                                <img src="assets/preview_section/mobile_preview09.svg" alt="" class="mobile_preview">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mode_changing-image">
+                <img src="assets/preview_section/transition_lightMode_background.svg" alt="Light Mode color mountain"
+                    class="background_transition display">
+                <img src="assets/preview_section/transition_DarkMode_background.svg" alt="dark Mode color mountain"
+                    class="background_transition darkModeActive">
+            </div>
+            <div class="transition_container_01">
+                <div class="transition_feature" data-aos="fade-up" data-aos-duration="4000">
+                    <p class="feature-head">Feature Shown</p>
+                </div>
+            </div>
+            <div class="transition_container_02">
+                <div class="transition_feature reverse" data-aos="fade-up" data-aos-duration="4000">
+                    <p class="feature-head">Feature Shown</p>
+                </div>
+            </div>
+            <div class="transition_container_03">
+                <div class="transition_feature" data-aos="fade-up" data-aos-duration="4000">
+                    <p class="feature-head">Feature Shown</p>
+                </div>
+            </div>
+            <div class="transition_container_04">
+                <div class="transition_feature reverse" data-aos="fade-up" data-aos-duration="4000">
+                    <p class="feature-head">Feature Shown</p>
+                </div>
+            </div>
+            <div class="transition_container_05">
+                <div class="transition_feature" data-aos="fade-up" data-aos-duration="4000">
+                    <p class="feature-head">Feature Shown</p>
+                </div>
+            </div>
+            <div class="transition_container_06">
+                <div class="transition_feature reverse" data-aos="fade-up" data-aos-duration="4000">
+                    <p class="feature-head">Feature Shown</p>
+                </div>
+            </div>
+            <div class="transition_container_07">
+                <div class="transition_feature" data-aos="fade-up" data-aos-duration="4000">
+                    <p class="feature-head">Feature Shown</p>
+                </div>
+            </div>
+            <div class="transition_container_08">
+                <div class="transition_feature reverse" data-aos="fade-up" data-aos-duration="4000">
+                    <p class="feature-head">Feature Shown</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="transtionEnd-section">
+        <div class="transitionEnd-3"></div>
+    </section>
+
+    <section class="feature_section">
+        <div class="section_heading">
+            <p class="section_title">What We Do</p>
+            <p class="section_title-desc">Blossom has been designed with the neurodiverse community and takes
+            </p>
+        </div>
+        <div class="feature_cards">
+            <div class="feature">
+                <img src="assets/feature_card/feature-Ico.svg" alt="Feature Card Icon" class="card-icon">
+                <p class="feature_heading left">Customizable</p>
+                <p class="feature_heading-desc left">The application interface is completely customizable to meet your
+                    needs and liking.</p>
+            </div>
+            <div class="feature">
+                <img src="assets/feature_card/feature-Ico.svg" alt="Feature Card Icon" class="card-icon">
+                <p class="feature_heading left">Card-heading</p>
+                <p class="feature_heading-desc left">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's</p>
+            </div>
+            <div class="feature">
+                <img src="assets/feature_card/feature-Ico.svg" alt="Feature Card Icon" class="card-icon">
+                <p class="feature_heading left">Card-heading</p>
+                <p class="feature_heading-desc left">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's</p>
+            </div>
+            <div class="feature">
+                <img src="assets/feature_card/feature-Ico.svg" alt="Feature Card Icon" class="card-icon">
+                <p class="feature_heading left">Card-heading</p>
+                <p class="feature_heading-desc left">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's</p>
+            </div>
+            <div class="feature">
+                <img src="assets/feature_card/feature-Ico.svg" alt="Feature Card Icon" class="card-icon">
+                <p class="feature_heading left">Card-heading</p>
+                <p class="feature_heading-desc left">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's</p>
+            </div>
+            <div class="feature">
+                <img src="assets/feature_card/feature-Ico.svg" alt="Feature Card Icon" class="card-icon">
+                <p class="feature_heading left">Card-heading</p>
+                <p class="feature_heading-desc left">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="vision_section">
+        <div class="vision_left-illustration">
+            <img src="assets/vision_section/vision_left-illustration.svg" alt="Vision section Illustration"
+                class="vision_leftIllustration">
+        </div>
+        <div class="right_content">
+            <p class="vision_heading">Our Vision</p>
+            <hr class="below_heading">
+            <p class="text_content top-mr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi cupiditate
+                tempore
+                repudiandae ducimus vitae nulla est similique. Animi, mollitia, nam velit sunt nesciunt magni quas natus
+                ratione aperiam nemo assumenda?
+                Delectus magnam rerum obcaecati fugit nam quasi velit nesciunt deserunt cum iste tempora exercitationem
+                ipsum dolore enim quibusdam ipsa rem tempore accusamus, commodi deleniti! Id cumque nostrum ea vitae
+                reiciendis?
+                Reiciendis, itaque saepe. Omnis nisi aliquid blanditiis rerum ea aliquam possimus. Atque, sed? Ipsam
+                quasi architecto tenetur blanditiis fuga libero. Nisi, nulla iste quia tempora aliquid quo atque ullam
+                aspernatur.
+                Quis aperiam nam commodi itaque officia, eaque quo natus iusto saepe odio et quidem porro laborum ad
+                facilis explicabo hic? Provident laborum incidunt illo id qui autem harum facilis optio.</p>
+            <p class="text_content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi cupiditate tempore
+                repudiandae ducimus vitae nulla est similique. Animi, mollitia, nam velit sunt nesciunt magni quas natus
+                ratione aperiam nemo assumenda?
+                Delectus magnam rerum obcaecati fugit nam quasi velit nesciunt deserunt cum iste tempora exercitationem
+                ipsum dolore enim quibusdam ipsa rem tempore accusamus</p>
+        </div>
+    </section>
+
+    <section class="early_access_section">
+        <div class="input_form">
+            <div class="section_wrapper">
+                <div class="number_update">
+                    <div class="flowing_number flowing_number2">
+                        <p class="numbers">1</p>
+                        <p class="numbers">2</p>
+                        <p class="numbers">3</p>
+                        <p class="numbers">4</p>
+                        <p class="numbers">5</p>
+                    </div>
+                    <p class="whole_number">/5</p>
+                </div>
+                <div class="formOverflow">
+                    <form action="" id="form2">
+                        <div class="name_container">
+                            <label for="name" class="name">What's Your Full
+                                Name ?</label>
+                            <input type="text" name="name" id="name_input" placeholder="Enter your Name">
+                            <div class="move_to_next" id="moveFirst2">Next</div>
+                        </div>
+                        <div class="email_container">
+                            <label for="email" class="email_label">Btw
+                                What's Your Email ?</label>
+                            <input type="email" name="email" id="email_input" placeholder="example@gmail.com">
+                            <div class="flex_container">
+                                <div class="move_to_next" id="moveSecond2">Next</div>
+                                <div class="move_to_next zero" id="moveFirstback2">Prev</div>
+                            </div>
+                        </div>
+                        <div class="location_container">
+                            <label for="location" class="location">Where are you based
+                                ?</label>
+                            <input type="text" name="location" id="location_input" placeholder="City, Country">
+                            <div class="flex_container">
+                                <div class="move_to_next" id="moveThird2">Next</div>
+                                <div class="move_to_next zero" id="moveSecondback2">Prev</div>
+                            </div>
+                        </div>
+                        <div class="type_container">
+                            <label for="type" class="type">Great, You are an ?</label>
+                            <select name="type" id="type_input">
+                                <option value="Autistic Person">Autistic Person</option>
+                                <option value="Autistic Parent">Autistic Parent</option>
+                                <option value="Non-Autistic Person">Non-Autistic Person</option>
+                            </select>
+                            <div class="flex_container">
+                                <div class="move_to_next" id="moveForth2">Next</div>
+                                <div class="move_to_next zero" id="moveThirdback2">Prev</div>
+                            </div>
+                        </div>
+                        <div class="authorize_container">
+                            <label for="type" class="type">Sign in with</label>
+                            <div class="google_signIn" id="signIn_google">
+                                <img src="assets/input_section/signIn_google.svg" alt="Google sign in">
+                                <span class="authentication_name">Google Sign-in</span>
+                            </div>
+                            <div class="facebook_signIn" id="signIn_facebook">
+                                <img src="assets/input_section/signIn_facebook.svg" alt="Facebook sign in">
+                                <span class="authentication_name">Facebook Sign-in</span>
+                            </div>
+                            <div class="flex_container">
+                                <div class="move_to_next" id="moveFifth2">Next</div>
+                                <div class="move_to_next zero" id="moveForthback2">Prev</div>
+                            </div>
+                        </div>
+                        <div class="submit_container">
+                            <label for="submit" class="submit">Great do you want to proceed
+                                ?</label>
+                            <div class="flex_container wid">
+                                <input type="submit" value="Yeah, Submit My Details" id="submitForm2">
+                            </div>
+                        </div>
+                        <div class="signIn-done">
+                            sign in done
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="input_text_bottom">
+                <p>*Neurodivergent individuals function in ways that diverge from the dominant societal standards of
+                    “normal”, and include neurodivergence such as autism, dyslexia, ADHD, etc.</p>
+                <p>**Neurotypical individuals have neurocognitive functioning that fall within the dominant societal
+                    standards of “normal.” Interested to learn more, <a href="#" target="_blank">read here.</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="transtionEnd-section">
+        <div class="transitionEnd-3 start"></div>
+    </section>
+
+    <footer class="footer_section">
+        <div class="footer_social-icon">
+            <a href="#">
+                <img src="assets/footer_section/social_instagram-whiteIcon.svg" alt="Social Instagram Icon"
+                    class="socialTag none">
+                <img src="assets/footer_section/social_instagram-DarkIcon.svg" alt="Social Instagram Icon"
+                    class="socialTag hid">
+            </a>
+            <a href="#">
+                <img src="assets/footer_section/social_meta-whiteIcon.svg" alt="Social Meta Icon"
+                    class="socialTag none">
+                <img src="assets/footer_section/social_meta-DarkIcon.svg" alt="Social Meta Icon" class="socialTag hid">
+            </a>
+            <a href="#">
+                <img src="assets/footer_section/social_twitter-whiteIcon.svg" alt="Social Twitter Icon"
+                    class="socialTag none">
+                <img src="assets/footer_section/social_twitter-DarkIcon.svg" alt="Social Twitter Icon"
+                    class="socialTag hid">
+            </a>
+            <a href="#">
+                <img src="assets/footer_section/social_pintrest-whiteIcon.svg" alt="Social Pintrest Icon"
+                    class="socialTag none">
+                <img src="assets/footer_section/social_pintrest-DarkIcon.svg" alt="Social Pintrest Icon"
+                    class="socialTag hid">
+            </a>
+            <a href="#">
+                <img src="assets/footer_section/social_linkdin-whiteIcon.svg" alt="Social LinkdIn Icon"
+                    class="socialTag none">
+                <img src="assets/footer_section/social_linkdin-DarkIcon.svg" alt="Social LinkdIn Icon"
+                    class="socialTag hid">
+            </a>
+        </div>
+        <div class="footer_brand">
+            <a href="index.html">
+                <img src="assets/header/website-brand_logo.svg" alt="Blossom logo" class="blossom-brand footer-b">
+                <h1 class="header_brand zero_mar ">Blossom.</h1>
+            </a>
+        </div>
+        <div class="footer_copyright">@ Copyright 2021-2022 All rights reserved. Powered by Blossom</div>
+    </footer>
+
+
+
+
+    <script src="js/highlight_text.js"></script>
+    <script src="js/header-section.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/input-section.js"></script>
+    <script type="module" src="js/input_dataFirebase.js"></script>
+</body>
+
+</html>
