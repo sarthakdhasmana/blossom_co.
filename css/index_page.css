@@ -156,7 +156,7 @@
 }
 
 .input_form {
-    padding: 140px 140px 20px;
+    padding: 140px 160px 20px 140px;
     background-color: var(--signIn-lightMode);
     border-radius: 46px;
     height: 48em;
@@ -178,8 +178,25 @@
     transition: 500ms;
 }
 
+.input_wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputSection_illustration {
+    width: 35%;
+    transition: 500ms;
+    position: relative;
+}
+
+
+.width_flex {
+    height: 100%;
+}
+
 .section_wrapper {
-    height: 78%;
+    height: 83%;
 }
 
 .input_text_bottom {
@@ -189,6 +206,7 @@
 .input_text_bottom p {
     font-size: 14px;
     text-align: center;
+    color: var(--per-card-textHead-desc);
 }
 
 .input_text_bottom p a {
@@ -206,12 +224,15 @@
     width: 94%;
 }
 
-.inputSection_illustration {
-    display: none;
-}
-
 .input_illustration {
     width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: all 500ms ease-in;
+}
+
+.input_illustration.active {
+    opacity: 1;
 }
 
 .zero {
@@ -312,7 +333,8 @@
 }
 
 .google_signIn,
-.facebook_signIn {
+.facebook_signIn,
+.Email_signIn {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -321,6 +343,8 @@
     width: 34em;
     transition: 500ms;
     padding: 8px 15px;
+    margin-bottom: 28px;
+
 }
 
 .google_signIn img {
@@ -328,6 +352,10 @@
 }
 
 .facebook_signIn img {
+    margin-right: 15px;
+}
+
+.Email_signIn img {
     margin-right: 15px;
 }
 
@@ -343,8 +371,11 @@
     font-size: 18px;
 }
 
+.Email_signIn span {
+    font-size: 18px;
+}
+
 .facebook_signIn {
-    margin-bottom: 50px;
     padding: 10px 15px;
 }
 
@@ -394,6 +425,26 @@
 .transition_area {
     position: relative;
     padding: 5rem 0rem 0rem;
+}
+
+.card_feature {
+    grid-column-gap: 48em;
+    padding: 50px 120px;
+    height: 40em;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    width: 100%;
+    top: 3em;
+}
+
+.bot {
+    margin-bottom: 40px;
+}
+
+.card {
+    text-align: center;
 }
 
 .mobile_sticky-middle {
@@ -637,6 +688,9 @@
     color: var(--text-section_heading-desc)
 }
 
+.bottom {
+    margin-bottom: 10px;
+}
 
 
 
@@ -690,12 +744,58 @@
         font-size: 1.5em;
     }
 
+    .input_form {
+        padding: 120px 140px 20px 120px;
+    }
+
+    #name_input,
+    #email_input,
+    #location_input,
+    #type_input {
+        width: 26.2em;
+    }
+
+    .width_flex {
+        width: 54%;
+    }
+
+    .inputSection_illustration {
+        width: 43%;
+    }
+
+    .input_text_bottom {
+        margin-top: 0em;
+    }
+
+    .flex_container {
+        width: 74%;
+    }
+
+    .google_signIn,
+    .facebook_signIn,
+    .Email_signIn {
+        width: 30em;
+    }
+
+    .formOverflow {
+        height: 80%;
+    }
+
+    .input_illustration {
+        margin-top: 36px;
+    }
+
     .feature-head {
         font-size: 3.125em;
     }
 
     .show-mob {
         display: none;
+    }
+
+    .card_feature {
+        grid-column-gap: 35em;
+        padding: 50px 110px;
     }
 }
 
@@ -783,6 +883,52 @@
 
     .early_access_section {
         padding: 90px 90px;
+    }
+
+    .card_feature {
+        grid-column-gap: 24em;
+        padding: 50px 60px;
+    }
+
+    .input_form {
+        padding: 120px 140px 20px 120px;
+    }
+
+    #name_input,
+    #email_input,
+    #location_input,
+    #type_input {
+        width: 33.2em;
+    }
+
+    .width_flex {
+        width: 54%;
+    }
+
+    .inputSection_illustration {
+        display: none;
+    }
+
+    .input_text_bottom {
+        margin-top: 0em;
+    }
+
+    .flex_container {
+        width: 74%;
+    }
+
+    .google_signIn,
+    .facebook_signIn,
+    .Email_signIn {
+        width: 30em;
+    }
+
+    .formOverflow {
+        height: 80%;
+    }
+
+    .input_illustration {
+        margin-top: 36px;
     }
 }
 
@@ -893,6 +1039,14 @@
         padding: 90px 55px;
     }
 
+    .card_feature {
+        grid-column-gap: 21em;
+        padding: 50px 20px;
+    }
+
+    .inputSection_illustration {
+        display: none;
+    }
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<[768px-992px]<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
@@ -1016,6 +1170,14 @@
     .early_access_section {
         padding: 90px 40px;
     }
+
+    .card_feature {
+        display: none;
+    }
+
+    .inputSection_illustration {
+        display: none;
+    }
 }
 
 
@@ -1059,8 +1221,12 @@
     }
 
     .formOverflow {
+        height: 94%;
         width: 100%;
-        height: 120%;
+    }
+
+    .section_wrapper {
+        height: 100%;
     }
 
     .input_text_bottom {
@@ -1068,9 +1234,16 @@
     }
 
     .google_signIn,
-    .facebook_signIn {
-        width: 22em;
+    .facebook_signIn,
+    .Email_signIn {
+        width: 25em;
     }
+
+    .submit {
+        width: 66%;
+    }
+
+
 
     .btns {
         display: flex;
@@ -1157,14 +1330,18 @@
     #name_input,
     #email_input,
     #location_input,
-    #type_input,
+    #type_input {
+        width: 66%;
+    }
+
     .flex_container {
-        width: 60%;
+        width: 32%;
     }
 
     .full_wid {
-        width: 100%;
+        width: 59%;
     }
+
 
     .name,
     .email_label,
@@ -1174,8 +1351,20 @@
         font-size: 22px;
     }
 
+    .wid {
+        width: 59%;
+    }
+
     .early_access_section {
         padding: 90px 30px;
+    }
+
+    .card_feature {
+        display: none;
+    }
+
+    .inputSection_illustration {
+        display: none;
     }
 }
 
@@ -1213,6 +1402,7 @@
     }
 
     .formOverflow {
+        height: 110%;
         width: 100%;
     }
 
@@ -1293,6 +1483,10 @@
         flex: 0 0 22rem;
     }
 
+    .submit {
+        width: 66%;
+    }
+
     .feature_heading-desc {
         margin-top: 5px;
         line-height: 28px;
@@ -1327,6 +1521,7 @@
     .input_form {
         padding: 65px 15px;
         height: 36em;
+        border-radius: 20px;
     }
 
     .numbers {
@@ -1341,12 +1536,21 @@
     #email_input,
     #location_input,
     #type_input {
-        width: 50%;
+        width: 66%;
         font-size: 16px;
     }
 
     .flex_container {
-        width: 50%;
+        width: 31%;
+    }
+
+    #submitForm,
+    #submitForm2 {
+        width: 13rem;
+    }
+
+    .full_wid {
+        width: 49%;
     }
 
     .input_text_bottom {
@@ -1354,12 +1558,21 @@
     }
 
     .google_signIn,
-    .facebook_signIn {
-        width: 50%;
+    .facebook_signIn,
+    .Email_signIn {
+        width: 25em;
+    }
+
+    .wid {
+        width: 49%;
     }
 
     .transition_feature {
         display: none;
+    }
+
+    .width_flex {
+        width: 100%;
     }
 
     .name,
@@ -1367,10 +1580,18 @@
     .location,
     .type,
     .submit {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .early_access_section {
-        padding: 90px 20px;
+        padding: 90px 5px;
+    }
+
+    .card_feature {
+        display: none;
+    }
+
+    .inputSection_illustration {
+        display: none;
     }
 }
